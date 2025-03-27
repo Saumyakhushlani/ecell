@@ -7,11 +7,14 @@ import Clients from '../mycomponents/Clients'
 import ContentSection from '../mycomponents/ContentSection'
 import Hero from '../mycomponents/Hero'
 import Header from '../mycomponents/Header'
+import AnimatedContent from '../mycomponents/AnimatedContent'
 import FAQ from '../mycomponents/FAQ'
-import Button from '../mycomponents/Button'
+import Button from '../mycomponents/Button2'
 
 const page = () => {
     return (
+        <>
+        
         <div className=''>
             <Header/>
             <Hero/>
@@ -24,6 +27,7 @@ const page = () => {
             <Footer />
             {/* <Button/> */}
         </div>
+        </>
     )
 }
 
