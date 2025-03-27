@@ -67,7 +67,7 @@ const Footer = () => {
 
             {/* Bottom Section */}
             <div className="mt-8 bg-[#000F37] text-white text-center py-4">
-                <p>Copyright © 2021 all rights reserved smartHome</p>
+                <p>Copyright © 2025 all rights reserved smartHome</p>
                 <p>Developed by Saumya Khushlani</p>
             </div>
         </footer>

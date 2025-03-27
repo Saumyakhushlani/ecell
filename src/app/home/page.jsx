@@ -14,7 +14,7 @@ const page = () => {
     return (
         <div className=''>
             <Header/>
-            {/* <Hero/> */}
+            <Hero/>
             <ContentSection/>
             <Clients/>
             <Testimonial/>

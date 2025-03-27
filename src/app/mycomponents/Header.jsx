@@ -11,7 +11,7 @@ const Header = () => {
     }
     return (
         <>
-            <div className='flex flex-row items-center md:justify-evenly justify-between bg-[#1E5AFA] py-4 md:px-8 px-4 text-xl'>
+            <div className='flex flex-row items-center md:justify-center md:gap-48 justify-between bg-[#1E5AFA] py-4 md:px-0 px-4 text-xl'>
                 <div className="flex-row items-center justify-center gap-4 text-xl text-white md:flex hidden">
                     <div className="">Home </div>
                     <div className="">About</div>
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
             {open &&
                 <div className='w-[100%]  bg-[#1E5AFA] px-4 py-8 text-white text-2xl font-semibold overflow-y-hidden h-screen'>
-                    <div className="py-2 px-4 mb-3 rounded-2xl w-[100%] bg-white text-[#1E5AFA]">Home </div>
+                    <div className="py-2 px-4 mb-3 rounded-xl w-[100%] bg-white text-[#1E5AFA]">Home </div>
                     <div className="py-2 px-4 mb-3 rounded-2xl w-[100%]">About</div>
                     <div className="py-2 px-4 mb-3 rounded-2xl w-[100%]">Testimonial</div>
                     <div className="py-2 px-4 mb-3 rounded-2xl w-[100%]">Contact</div>

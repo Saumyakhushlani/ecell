@@ -1,4 +1,6 @@
+
 import React from 'react'
+import Button from './Button'
 
 const Subscribe = () => {
     return (
@@ -9,8 +11,8 @@ const Subscribe = () => {
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
                 </p>
             </div>
-            <button className="mt-6 md:mt-0 px-12 py-2  border-white border-2 rounded-lg text-white hover:bg-white hover:text-blue-600 transition text-xl">
-                Get start
+            <button className="mt-6 md:mt-0 border-2 border-white rounded-xl ">
+                <Button/>
             </button>
         </div>
     )
