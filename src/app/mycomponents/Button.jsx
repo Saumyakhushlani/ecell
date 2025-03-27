@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Button = () => {
   return (
     <StyledWrapper>
-      <button className="io-button">
+      <button className="cssbuttons-io-button">
         Learn More
         <div className="icon">
           <svg height={24} width={24} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@ const Button = () => {
 }
 
 const StyledWrapper = styled.div`
-  .io-button {
+  .cssbuttons-io-button {
     background: #1E5AFA;
     color: white;
     font-family: inherit;

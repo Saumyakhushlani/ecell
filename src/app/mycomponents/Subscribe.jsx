@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Button2 from './Button2'
+import Button from '../mycomponents/Button'
 
 const Subscribe = () => {
     return (
@@ -12,7 +12,7 @@ const Subscribe = () => {
                 </p>
             </div>
             <button className="mt-6 md:mt-0 border-2 border-white rounded-xl ">
-                <Button2/>
+                <Button/>
             </button>
         </div>
     )

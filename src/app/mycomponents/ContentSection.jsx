@@ -1,5 +1,5 @@
 import React from 'react';
-import Button2 from './Button2';
+import Button from './Button';
 
 const ContentSection = () => {
   const sections = [
@@ -38,7 +38,7 @@ const ContentSection = () => {
                 Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.
               </p>
               <button className="mt-6 shadow-lg mb-16">
-                <Button2 />
+                <Button />
               </button>
             </div>
           </div>
