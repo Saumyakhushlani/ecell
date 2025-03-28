@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import './Animation.css'
+import Link from 'next/link';
 
 const Header = () => {
     const [open, setopen] = useState(false)
@@ -15,10 +16,11 @@ const Header = () => {
             <div className='bg-[#1E5AFA]'>
                 <div className='ani1 flex flex-row items-center md:justify-center md:gap-48 justify-between  py-4 md:px-0 px-4 text-xl'>
                     <div className="flex-row items-center justify-center gap-4 text-xl text-white md:flex hidden">
-                        <div className="">Home </div>
-                        <div className="">About</div>
-                        <div className="">Testimonial</div>
-                        <div className="">Contact</div>
+                        <Link href='#home'><div className="">Home </div></Link>
+                        <Link href='#about'><div className="">About</div></Link>
+                        <Link href='#test'><div className="">Testimonial</div></Link>
+                        <Link href='#contact'><div className="">Contact </div></Link>
+                        
                     </div>
                     <div className='font-semibold text-4xl text-white'>smartHomes</div>
                     <div className=" md:flex hidden flex-row items-center justify-center gap-4">
@@ -30,10 +32,11 @@ const Header = () => {
                 </div>
                 {open &&
                     <div className='w-[100%]  bg-[#1E5AFA] px-4 py-8 text-white text-2xl font-semibold overflow-y-hidden h-screen'>
-                        <div className="py-2 px-4 mb-3 rounded-xl w-[100%] bg-white text-[#1E5AFA]">Home </div>
-                        <div className="py-2 px-4 mb-3 rounded-2xl w-[100%]">About</div>
-                        <div className="py-2 px-4 mb-3 rounded-2xl w-[100%]">Testimonial</div>
-                        <div className="py-2 px-4 mb-3 rounded-2xl w-[100%]">Contact</div>
+                        
+                        <Link href='#home'><div className="py-2 px-4 mb-3 rounded-2xl w-[100%] bg-white text-[#1E5AFA]" onClick={change}>Home </div></Link>
+                        <Link href='#about'><div className="py-2 px-4 mb-3 rounded-2xl w-[100%] onClick={change}">About</div></Link>
+                        <Link href='#test'><div className="py-2 px-4 mb-3 rounded-2xl w-[100%] onClick={change}">Testimonial</div></Link>
+                        <Link href='#contact'><div className="py-2 px-4 mb-3 rounded-2xl w-[100%] onClick={change}">Contact </div></Link>
                         <div className="py-2 px-4 mb-3 rounded-2xl w-[100%]">SignUp</div>
                         <div className="py-2 px-4 mb-3 rounded-2xl w-[100%]">Login</div>
                         <div className='flex flex-row items-center justify-center gap-8 font-semibold relative'>

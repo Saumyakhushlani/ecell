@@ -3,7 +3,7 @@ import React from 'react';
 const Download = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16 overflow-hidden">
-      {/* Left Content */}
+      
       <div className="max-w-md">
         <h2 className="text-4xl font-bold text-gray-900">Download App</h2>
         <p className="mt-4 text-gray-600 leading-relaxed">
@@ -15,7 +15,7 @@ const Download = () => {
         </div>
       </div>
 
-      {/* Right Image */}
+      
       <div className="relative mt-20 md:mt-0 md:ml-16">
         <img
           src="/subscribe_image.png"

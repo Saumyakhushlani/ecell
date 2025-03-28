@@ -17,14 +17,17 @@ const page = () => {
         
         <div className=''>
             <Header/>
-            <Hero/>
-            <ContentSection/>
+            <div id="home"><Hero/></div>
+            <div id="about"><ContentSection/></div>
+            
             <Clients/>
-            <Testimonial/>
+            <div id="test"><Testimonial/></div>
+            
             <FAQ/>
             <Download/>
             <Subscribe />
-            <Footer />
+            <div id="contact"><Footer /></div>
+            
             {/* <Button/> */}
         </div>
         </>
