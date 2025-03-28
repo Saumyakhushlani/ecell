@@ -1,9 +1,18 @@
 import React from 'react';
 import './Animation.css'
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Hero = () => {
   return (
     <div className='bg-[#1E5AFA]'>
+
+      <div className='flex flex-col items-center justify-center gap-6 font-semibold absolute left-4 top-[75%]'>
+        <FaFacebookF className="text-white text-2xl cursor-pointer" />
+        <FaInstagram className="text-white text-xl cursor-pointer" />
+        <FaTwitter className="text-white text-xl cursor-pointer" />
+        <FaLinkedinIn className="text-white text-xl cursor-pointer" />
+      </div>
+
       <div className="relative w-full flex flex-col items-center text-center pt-6 px-5  overflow-hidden ani2">
         <h1 className="text-white font-extrabold max-w-[800px] text-4xl sm:text-5xl lg:text-6xl leading-tight">
           Smart Home Application
