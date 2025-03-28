@@ -8,6 +8,7 @@ const Clients = () => {
 
     return (
         <div id="clients" className="flex flex-col items-center md:mt-32 mt-6">
+            <img src="/D2.png" alt="" className='absolute right-0 ' />
             <h2 className="md:text-6xl text-4xl font-bold text-[#313131] text-center">
                 Our Clients
             </h2>

@@ -13,8 +13,10 @@ const Header = () => {
     }
     return (
         <>
+        {!open&&<img src="/Ellipse.png" alt="ellipse" className='absolute z-0 top-0 right-0' />}
+        
             <div className='bg-[#1E5AFA]'>
-             <div className={`ani1 flex flex-row items-center md:justify-center md:gap-48 justify-between py-4 md:px-0 px-4 text-xl `}>
+             <div className={`ani1 flex flex-row items-center md:justify-center md:gap-48 justify-between py-4 md:px-0 px-4 text-xl  top-0`}>
                     <div className="flex-row items-center justify-center gap-4 text-xl text-white md:flex hidden">
                         <Link href='#home'><div className="">Home </div></Link>
                         <Link href='#about'><div className="">About</div></Link>
@@ -31,7 +33,7 @@ const Header = () => {
 
                 </div>
                 {open &&
-                    <div className='w-[100%]  bg-[#1E5AFA] px-4 py-8 text-white text-2xl font-semibold overflow-y-hidden h-screen fixed z-50'>
+                    <div className='w-[100%]  bg-[#1E5AFA] px-4 py-8 text-white text-2xl font-semibold overflow-y-hidden h-screen absolute} z-50'>
                         
                         <Link href='#home'><div className="py-2 px-4 mb-3 rounded-2xl w-[100%] bg-white text-[#1E5AFA]" onClick={change}>Home </div></Link>
                         <Link href='#about'><div className="py-2 px-4 mb-3 rounded-2xl w-[100%] "onClick={change}>About</div></Link>

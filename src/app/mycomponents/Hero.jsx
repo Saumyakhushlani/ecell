@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className='bg-[#1E5AFA]'>
 
-      <div className='flex flex-col items-center justify-center gap-6 font-semibold absolute left-4 top-[75%]'>
+      <div className='md:flex hidden flex-col items-center justify-center gap-6 font-semibold absolute left-4 top-[75%]'>
         <FaFacebookF className="text-white text-2xl cursor-pointer" />
         <FaInstagram className="text-white text-xl cursor-pointer" />
         <FaTwitter className="text-white text-xl cursor-pointer" />

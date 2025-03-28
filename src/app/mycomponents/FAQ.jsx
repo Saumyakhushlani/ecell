@@ -19,29 +19,32 @@ const FAQ = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-5 pt-16 md:pb-16">
-      
-      <h2 className="md:text-6xl text-4xl font-bold text-[#313131] text-center">FAQ’s</h2>
+    <>
+      <div className="max-w-2xl mx-auto px-5 pt-16 md:pb-16">
+    <img src="/Decorator.png" alt="" className="absolute left-0 h-[40vh] mt-[10vh] md:block hidden"/>
 
-      
-      <div className="mt-10 space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border rounded-lg shadow-sm">
-            <button
-              className="w-full flex justify-between items-center px-4 py-2 text-lg font-medium text-gray-900 text-left"
-              onClick={() => toggleFAQ(index)}
-            >
-              {faq.question}
-              {openIndex === index ? <FaMinus className="text-gray-600" /> : <FaPlus className="text-gray-600" />}
-            </button>
+        <h2 className="md:text-6xl text-4xl font-bold text-[#313131] text-center">FAQ’s</h2>
 
-            <div className={`faq-answer ${openIndex === index ? "open" : ""}`}>
-              <p className="text-gray-700">{faq.answer}</p>
+
+        <div className="mt-10 space-y-4">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border rounded-lg shadow-sm">
+              <button
+                className="w-full flex justify-between items-center px-4 py-2 text-lg font-medium text-gray-900 text-left"
+                onClick={() => toggleFAQ(index)}
+              >
+                {faq.question}
+                {openIndex === index ? <FaMinus className="text-gray-600" /> : <FaPlus className="text-gray-600" />}
+              </button>
+
+              <div className={`faq-answer ${openIndex === index ? "open" : ""}`}>
+                <p className="text-gray-700">{faq.answer}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
